@@ -1,0 +1,41 @@
+body {
+      background: linear-gradient(135deg, #e9d8bf, #815c38, #c4b39a);
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    
+/* ESTILIZAÇÃO DO VÍDEO DO PORTFÓLIO */
+.video-portfolio {
+  width: 100%;                  /* Faz o vídeo ocupar toda a largura disponível no telemóvel */
+  max-width: 680px;             /* Define um limite para o vídeo não ficar gigante no computador */
+  display: block;               /* Permite a centralização com o margin auto */
+  margin: 20px auto 10px auto;  /* Centraliza o vídeo e dá espaço em relação ao texto de cima */
+  
+  /* Cores e Formato do Tema */
+  border: 4px solid #573d04;    /* Borda rosa choque marcante, igual à da sua navegação */
+  border-radius: 16px;          /* Mesma curvatura dos seus cartões (.card) */
+  background-color: #74520a;    /* Cor de fundo que aparece enquanto o vídeo carrega */
+  
+  /* Sombra Neon Combinando com o Projeto */
+  box-shadow: 0 8px 25px rgb(95, 54, 1); 
+  
+  /* Transição Suave */
+  transition: all 0.3s ease;
+  outline: none;                /* Remove a linha de seleção ao clicar no vídeo */
+}
+
+/* Efeito ao passar o rato (mouse) por cima do vídeo */
+.video-portfolio:hover {
+  transform: scale(1.02);       /* Dá uma leve aumentada suave, seguindo o padrão dos seus botões */
+  box-shadow: 0 10px 30px rgba(158, 111, 17, 0.95); /* O brilho rosa neon fica mais forte e intenso */
+}
+
+
+/* CONTAINER PARA CENTRALIZAR O BOTÃO */
+.container-botao-voltar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto; /* Dá um espaço bem bonito entre as fotos e o botão */
+  width: 100%;
+}

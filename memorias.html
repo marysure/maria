@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos</title>
+    
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <h1 class="titulo-album">Pilares da minha vida em fotos</h1>
+    <div class="subtitulo-album">cada foto um registro de amor</div>
+
+    <div class="album-container">
+        
+        <div class="foto-box" onclick="abrirModal('img/foto1.jpeg', 'fé que me move; me sustenta')">
+            <img src="img/foto1.jpeg" alt="Foto 1">
+            <div class="legenda">Minha base</div>
+        </div>
+        
+        <div class="foto-box" onclick="abrirModal('img/foto2.jpeg', 'Companheiro de vida, irmão')">
+            <img src="img/foto2.jpeg" alt="Foto 2">
+            <div class="legenda">Companheirismo</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto 3.jpeg', 'Meu melhor amigo; minha pessoa favorita')">
+            <img src="img/foto 3.jpeg" alt="Foto 3">
+            <div class="legenda">Familia</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto 4.jpeg', ' Familía, meu sorriso preferido')">
+            <img src="img/foto 4.jpeg" alt="Foto 4"> 
+            <div class="legenda">Amor genuíno</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto 5.jpeg', 'Meu abrigo')">
+            <img src="img/foto 5.jpeg" alt="Foto 5">
+            <div class="legenda">Porto seguro</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto6.jpeg', 'Minha fé, minha razão')">
+            <img src="img/foto6.jpeg" alt="Foto 6">
+            <div class="legenda">Catolicismo</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto 7.jpeg', 'Amor de vó, meu abrigo')">
+            <img src="img/foto 7.jpeg" alt="Foto 7">
+            <div class="legenda">Minha luz</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto 8.jpeg', 'Meu colo Favorito')">
+            <img src="img/foto 8.jpeg" alt="Foto 8">
+            <div class="legenda">Meu abrigo</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto 9.jpeg', 'Cada foto, um click de amor')">
+            <img src="img/foto 9.jpeg" alt="Foto 8">
+            <div class="legenda">Fotos que registram amor</div>
+        </div>
+    </div> 
+    <audio controls autoplay loop class="musica-fundo">
+        <source src="audio/musica2.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento
+    </audio>
+    <div class="container-botao-voltar">
+        <a href="portifólio.html" class="botao-voltar">
+            <i class="fa-solid fa-arrow-left"></i> Voltar
+        </a>
+    </div>
+    </div>
+    <div class="modal" id="meuModal">
+        <span class="btn-fechar" onclick="fecharModal()">&times;</span>
+        <img id="imagemModal" src="" alt="Foto em tela cheia">
+        <div class="legenda-modal" id="textoModal"></div>
+    </div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget(
+    'https://vlibras.gov.br/app',
+    'https://vlibras.gov.br/config/default_logo.json',
+    'random',
+    'R'
+  );
+</script>
+</body>
+</html>
